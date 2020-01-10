@@ -1,0 +1,7 @@
+-- Write only the SQL statement that solves the problem and nothing else.
+
+-- select * from sessios;
+
+select userid, avg(duration) 
+from sessions 
+group by userid having count(userid) > 1;
